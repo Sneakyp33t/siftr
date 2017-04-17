@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Siftr</title>
+
+  <%= csrf_meta_tags %>
+  <!-- Had to change 'application' to 'default' because windows-->
+  <%= stylesheet_link_tag 'default', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'default', 'data-turbolinks-track': 'reload' %>
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to 'Siftr', controller: 'index'%>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="nav-bar-container">
+      <ul class="siftr-nav-right nav navbar-nav">
+        <li>
+          <%= link_to 'Categories', controller: 'categories'%>
+        </li>
+        <li>
+          <%= link_to 'Login', controller: 'login'%>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+
+  <div class="row">
+
+    <!-- CONTENT GOES HERE -->
+    <%= yield %>
+
+  </div>
+
+
+  <hr>
+  <!-- Footer -->
+  <footer>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>Copyright &copy; Siftr 2017</p>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<!-- /.container -->
+</body>
+
+</html>

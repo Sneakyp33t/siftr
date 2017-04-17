@@ -1,0 +1,84 @@
+/*!
+ * Start Bootstrap - Shop Homepage (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+body {
+    padding-top: 70px;
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.slide-image {
+    width: 100%;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;
+}
+
+.caption {
+    height: 120px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #D17581;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
+.siftr-nav-right {
+    position: relative;
+    float: right;
+}
+
+.siftr-nav-right > li > a {
+    /*color: #C62222 !important;*/
+}
+
+.siftr-nav-right > li > a:focus {
+    /*color: #342D2D !important;*/
+}
+
+.login-container {
+    position: relative;
+    padding: 0 37% 20% 50%;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+/*.nav-bar-right-side
+{
+	padding: 23px;
+	float: right;
+	border: thick outset #1567D0;
+	height: 112px;
+	width: 166px;
+}*/
+#nav-bar-container {
+    border: thick inset #E92020;
+}
