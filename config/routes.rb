@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'shared/_error_messages'
+
+  get 'users_home_page/index'
+
   get 'categories/index'
 
   get 'index/index'
@@ -8,6 +12,8 @@ Rails.application.routes.draw do
   get 'welcome/index'
 
   get 'pictures/new'
+
+  get 'pictures/show'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :pictures

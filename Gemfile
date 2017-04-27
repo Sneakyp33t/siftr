@@ -6,6 +6,18 @@ git_source(:github) do |repo_name|
 end
 
 
+
+
+
+
+#for image uploading
+gem 'carrierwave'
+gem 'mini_magick'   #handles image bitmaps
+gem 'fog'           #helps with amazon web services
+gem 'figaro'        #implementing security for your images
+gem 'unf'           #helps some carrierwave issues that come up
+# Validation for user's input
+gem 'client_side_validations'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
 # Use mysql as the database for Active Record

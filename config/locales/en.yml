@@ -21,3 +21,14 @@
 
 en:
   hello: "Hello world"
+  errors: "%{message}"
+
+  activerecords:
+    errors:
+      models:
+        picture:
+          attributes:
+
+            title:
+              blank: please enter a title
+
