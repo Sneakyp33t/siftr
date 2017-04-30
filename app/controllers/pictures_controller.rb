@@ -19,6 +19,6 @@ class PicturesController < ApplicationController
 
 	private #this is private to ensure no other controller can create a picture in the database
 		def picture_params
-			params.require(:picture).permit(:title, :description) #this ensures "mass assignments" are not allowed
+			params.require(:picture).permit(:title, :image, :description) #this ensures "mass assignments" are not allowed
 		end
 end

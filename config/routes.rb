@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :posts
   get 'shared/_error_messages'
 
   get 'users_home_page/index'
